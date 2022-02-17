@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import ATM from "./components/ATM";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleAtm } from "./redux/atmSlicer";
 function App() {
+  const dispatch = useDispatch();
+  const { showAtm } = useSelector((state) => state.atm);
+  const handleAtm = () => {
+    dispatch(toggleAtm());
+  };
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <button className="startButton" onClick={handleAtm}>
+          {showAtm ? "Close ATM" : "Start ATM"}
+        </button>
+        {showAtm && <ATM />}
       </header>
+      <footer><strong>&copy; Copyright 2022 Author: Oscar "Buse" Hederlig</strong></footer>
     </div>
   );
 }

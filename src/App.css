@@ -1,38 +1,57 @@
 .App {
   text-align: center;
+  display: block;
+  padding-top: 50px;
+}
+body {
+  background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 41%, rgba(0,212,255,1) 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.startButton {
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    background: #1f5d87;
+    background-image: -webkit-linear-gradient(top, #1f5d87, #2980b9);
+    background-image: -moz-linear-gradient(top, #1f5d87, #2980b9);
+    background-image: -ms-linear-gradient(top, #1f5d87, #2980b9);
+    background-image: -o-linear-gradient(top, #1f5d87, #2980b9);
+    background-image: linear-gradient(to bottom, #1f5d87, #2980b9);
+    -webkit-border-radius: 43;
+    -moz-border-radius: 43;
+    border-radius: 43px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
   }
+  
+  .startButton:hover {
+    background: #3cb0fd;
+    text-decoration: none;
+  }
+.bankomat {
+color: white;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.bankw {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+button {
+  background: #000000;
+  background-image: -webkit-linear-gradient(top, #000000, #878f94);
+  background-image: -moz-linear-gradient(top, #000000, #878f94);
+  background-image: -ms-linear-gradient(top, #000000, #878f94);
+  background-image: -o-linear-gradient(top, #000000, #878f94);
+  background-image: linear-gradient(to bottom, #000000, #878f94);
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bankd {
+  color: white;
 }
